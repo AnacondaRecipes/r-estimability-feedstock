@@ -10,8 +10,8 @@ package:
 source:
   fn: estimability_{{ version }}.tar.gz
   url:
-    - https://cran.r-project.org/src/contrib/estimability_{{ version }}.tar.gz
-    - https://cran.r-project.org/src/contrib/Archive/estimability/estimability_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/estimability_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/Archive/estimability/estimability_{{ version }}.tar.gz
   sha256: 30a5b0abae9525209531fe8dea44750f6b296948d35ebbe55759e565ef02688d
 
 
