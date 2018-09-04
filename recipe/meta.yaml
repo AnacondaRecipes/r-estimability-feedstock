@@ -8,7 +8,6 @@ package:
   version: {{ version|replace("-", "_") }}
 
 source:
-  fn: estimability_{{ version }}.tar.gz
   url:
     - {{ cran_mirror }}/src/contrib/estimability_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/estimability/estimability_{{ version }}.tar.gz
@@ -26,6 +25,7 @@ build:
 
 requirements:
   build:
+    - {{posix}}zip               # [win]
 
   host:
     - r-base
